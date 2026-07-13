@@ -1,0 +1,42 @@
+{% if site.data.awards and site.data.awards.size > 0 %}
+<section class="selected-awards">
+  <style>
+    .selected-awards{margin:2.5rem 0;padding:1.5rem;border-top:1px solid var(--hr-color);} 
+    .selected-awards__list{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;padding:0;margin:0}
+    .selected-awards__item{flex:1 1 220px;display:flex;gap:.75rem;align-items:flex-start}
+    .selected-awards__icon{font-size:1.4rem;color:var(--link-color);width:36px}
+    .selected-awards__meta h3{margin:0;font-size:1rem}
+    .selected-awards__meta p{margin:.25rem 0 0;color:var(--muted-color)}
+  </style>
+
+  <h2>Selected Awards</h2>
+
+  <ul class="selected-awards__list">
+    {% for award in site.data.awards %}
+    <li class="selected-awards__item">
+      <div class="selected-awards__icon">
+        {% if award.image and award.image != "" %}
+          <img src="{{ base_path }}{{ award.image }}" alt="{{ award.title }}" class="selected-awards__img" />
+        {% else %}
+          <i class="{{ award.icon }}" aria-hidden="true"></i>
+        {% endif %}
+      </div>
+      <div class="selected-awards__meta">
+        <h3>
+          {% if award.link and award.link != "" %}
+            <a href="{{ award.link }}" target="_blank">{{ award.title }}</a>
+          {% else %}
+            {{ award.title }}
+          {% endif %}
+        </h3>
+        {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<style>
+  .selected-awards__img{width:36px;height:36px;object-fit:contain;border-radius:4px}
+</style>

@@ -1,0 +1,16 @@
+# Selected awards data. Add, remove or reorder entries here.
+- id: Sparking Program
+  icon: "fas fa-trophy"
+  title: "Sparking Program"
+  year: 2026
+  description: "The most prestigious and selective academic organization for students at Tsinghua University. (top 1%)"
+  link: ""
+  image: "/images/awards/sparking.png"
+
+- id: Comprehensive Scholarship
+  icon: "fas fa-medal"
+  title: "2025 Comprehensive Scholarship"
+  year: 2025
+  description: "Recipient of the Tsinghua University Comprehensive Scholarship for well-rounded development. (top 10%)"
+  link: ""
+  image: "/images/awards/tsinghua.png"
