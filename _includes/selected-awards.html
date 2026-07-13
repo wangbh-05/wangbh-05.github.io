@@ -1,10 +1,12 @@
 {% if site.data.awards and site.data.awards.size > 0 %}
 <section class="selected-awards">
   <style>
-    .selected-awards{margin:2.5rem 0;padding:1.5rem;border-top:1px solid var(--hr-color);} 
-    .selected-awards__list{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;padding:0;margin:0}
-    .selected-awards__item{flex:1 1 220px;display:flex;gap:.75rem;align-items:flex-start}
-    .selected-awards__icon{font-size:1.4rem;color:var(--link-color);width:36px}
+    .selected-awards{margin:2.5rem 0;border-top:1px solid var(--hr-color)}
+    .selected-awards h2{margin-top:0;padding-top:1.5rem}
+    .selected-awards__list{display:flex;flex-direction:column;gap:1.2rem;list-style:none;padding:0;margin:1.5rem 0 0}
+    .selected-awards__item{display:flex;gap:1rem;align-items:stretch}
+    .selected-awards__icon{display:flex;align-items:center;justify-content:center;width:50px;flex-shrink:0;font-size:1.6rem;color:var(--link-color)}
+    .selected-awards__meta{flex:1}
     .selected-awards__meta h3{margin:0;font-size:1rem}
     .selected-awards__meta p{margin:.25rem 0 0;color:var(--muted-color)}
   </style>
@@ -38,5 +40,5 @@
 {% endif %}
 
 <style>
-  .selected-awards__img{width:36px;height:36px;object-fit:contain;border-radius:4px}
+  .selected-awards__img{width:100%;height:100%;object-fit:contain;border-radius:4px}
 </style>
