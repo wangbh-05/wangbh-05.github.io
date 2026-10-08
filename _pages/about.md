@@ -9,6 +9,8 @@ redirect_from:
 
 I am an undergraduate student at **Weiyang College, Tsinghua University**, pursuing studies in mathematics, physics, and software engineering. I expect to graduate in 2028.
 
+I was fortunate to be mentored by [Huazhe Xu](https://hxu.rocks/index.html) at the Tsinghua Embodied AI Lab (TEA Lab) during 2025–2026.
+
 ## Research Interests
 
 My research interests include **embodied AI**, **reinforcement learning**, and **diffusion and flow models**. I am especially interested in questions that challenge conventional assumptions and lead to counterintuitive insights.
